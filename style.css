@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Red Hat Display';
+    font-size: 16px;
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#bg-img{
+    display: none;
+}
+
+#card-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:355px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#img-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#img-text #hero-img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#img-text h2{
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 5px;
+}
+#img-text p{
+    width: 78%;
+    color: hsl(224, 23%, 55%);
+}
+
+#music-plan-price-change{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    border-radius: 15px;
+    background-color: hsl(225, 100%, 98%);
+    margin-bottom: 30px;
+}
+#music-plan-price-change #music-img{
+    padding: 15px;
+    padding-right: 20px;
+}
+#music-plan-price-change #plan-price{
+    display: flex;
+    flex-direction: column;
+    padding-right: 70px;
+}
+#music-plan-price-change #plan-price #plan{
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+    margin: 0px;
+}
+#music-plan-price-change #plan-price #price{
+    color: hsl(224, 23%, 55%);
+    margin: 0px;
+}
+#music-plan-price-change p#change{
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+}
+#music-plan-price-change p#change:hover{
+    color: blueviolet;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+#buttons #proceed{
+    padding: 15px;
+    font-weight: 700;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: none;
+}
+#buttons #proceed:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+}
+#buttons #cancel{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    background-color: white;
+    border: none;
+}
+#buttons #cancel:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 576px){
+
+    #bg-img{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    #bg-img img{
+        width: 100%;
+        height: 47%;
+    }
+
+    #card-container{
+        width: 400px;
+    }
+
+    #music-plan-price-change{
+        width: 80%;
+    }
+
+    #buttons{
+        width: 80%;
+    }
+
+}
